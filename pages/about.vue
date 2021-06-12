@@ -1,11 +1,17 @@
 <template>
     <div class="container">
-        <h1>About Dad Jokes</h1>
-        <p>This is an app that displays</p>
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, repudiandae?</p>
     </div>
 </template>
 
 
 <script>
-export default{}
+export default{
+    head(){
+        return{
+            title:"about"
+        }
+    }
+}
 </script>

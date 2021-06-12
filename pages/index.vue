@@ -1,15 +1,28 @@
 <template>
   <div class="container">
-    <h2>{{title}} </h2>
-    
+     <Hero/>
+     <LargeCardDisplay
+     v-for="cardInfo in largeCardInfo"
+     :key="cardInfo.id"
+     :cardsSection="cardInfo"
+     />
+    <SmallCardDisplay
+    v-for="cardInfo in smallCardInfo"
+    :key="`${cardInfo.title }`"
+    :cardsData="cardInfo"
+    />
   </div>
 </template>
 
 <script>
+import { largeCardSections, smallCardSections } from "@/assets/data.js"
+
 export default {
+
   data(){
     return {
-      title: 'Welcome to title'
+      largeCardInfo: largeCardSections,
+      smallCardInfo: smallCardSections
     }
   },
   head(){
