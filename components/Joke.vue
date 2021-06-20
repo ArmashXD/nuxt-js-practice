@@ -1,8 +1,7 @@
 <template>
 
 <nuxt-link :to="'jokes/' + id" class="joke-link">
-
-    <b-card :style="{margin:margin}">
+  <b-card :style="{margin:margin}">
   <div class="joke">
   <b-card-text class="card-text">{{ joke }}</b-card-text>
   </div>

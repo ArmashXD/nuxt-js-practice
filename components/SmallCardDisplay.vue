@@ -1,11 +1,9 @@
 <template>
-  <div>
+  <div class="container">
       <h3>{{ cardsData.title}}</h3>
       <div class="card-container">
-
       <SmallCard v-for="card in cardsData.cards" :key="card.id" :card="card"/>
-            </div>
-
+      </div>
   </div>
 </template>
 
